@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bias Result</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <p class="meta">Analysis Report</p>
+    <p><strong>Source:</strong> <a href="{{ url }}">{{ url }}</a></p>
+    <h2>Bias Analysis</h2>
+    <ul>
+      <li><strong>Predicted Bias:</strong> {{ result.bias }}</li>
+      <li><strong>Polarity:</strong> {{ result.polarity }}</li>
+      <li><strong>Subjectivity:</strong> {{ result.subjectivity }}</li>
+      <li><strong>Readability:</strong> {{ result.readability }}</li>
+    </ul>
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="/" style="font-weight: bold;">&larr; Analyze Another Article</a>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>News Bias Analyzer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h1>News Bias Analyzer</h1>
+    <p class="meta">Est. 2025 - Vol. I</p>
+    <form method="post">
+      <input type="text" name="url" placeholder="Paste news article URL" size="60" required>
+      <div style="text-align: center;">
+        <button type="submit">Analyze Article</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
